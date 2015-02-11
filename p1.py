@@ -28,8 +28,8 @@ for i,df in enumerate(dof):
              .format(int(df)))
 # get that legend / x axis!
 plt.legend(loc='best')
-plt.xlabel("T test value")
-plt.ylabel("1-CDF(Chi^2(x)), Prob(T >= c)")
-plt.title("Probability of Chi^2 larger than T approaches 0 and T grows large")
+plt.xlabel("T test value (T0) ")
+plt.ylabel("1-CDF(Chi^2(x)), Prob(T >= T0)")
+plt.title("Probability of Chi^2 larger than T0 approaches 0 as T0 grows large")
 pPlotUtil.saveFigure(fig,outputFolder + 'chi^2')
 
