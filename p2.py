@@ -56,5 +56,5 @@ def run(outDir = "./outputp2/"):
     pPlotUtil.saveFigure(fig,outDir + "CompareMaps")
 
 
-if __name__=="main":
+if __name__=="__main__":
     run()
