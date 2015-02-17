@@ -15,7 +15,9 @@ import PlotUtilities as pPlotUtil
 
 def plotBoth(rVals,haldane,kosambi):
     plt.plot(rVals,haldane,'r-',label="Haldane's mapping function")
-    plt.plot(rVals,kosambi,'b--',label="Kosambi's mapping function")
+    plt.plot(rVals,kosambi,'b--',linewidth=3.0,
+             label="Kosambi's mapping function")
+    plt.plot(rVals,rVals,'k-',linewidth=0.5,label="Morgan's mapping function")
     plt.xlabel("R value")
     plt.ylabel("Mapping value")
     plt.legend(loc='best')
